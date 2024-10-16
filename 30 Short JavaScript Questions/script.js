@@ -151,5 +151,23 @@
         // }
         // console.log(returnElements([1, 2, 3, 4, 5], 2))
 
+// 16. Function to return most frequent item of an array
+        // function arrayShuffle(arr){
+        //         let totalShuffleArea = arr.length;
 
+        //         while(totalShuffleArea > 0){
+        //                 totalShuffleArea--;
+        //                 let randomNo = Math.floor(Math.random()*arr.length)
+        //                 var temp = arr[totalShuffleArea];
+        //                 arr[totalShuffleArea] = arr[randomNo];
+        //                 arr[randomNo] = temp;
+        //         }
+        //         return arr;
+        // }
+        // console.log(arrayShuffle([1, 2, 3, 4, 5, 6]))
 
+// 17. Function to write array union
+        // function arrayUnion(arr1, arr2){
+        //         return [...new Set(arr1.concat(arr2))];
+        // }
+        // console.log(arrayUnion([1, 2, 3], [2, 3, 4, 5, 6]))
