@@ -96,6 +96,7 @@
         //         return sum;
         // }
         // console.log(addAll([1,2,3,4,5]))
+
 // 12. Loop an array and remove the objects which do not have gender's value male
         // function saveMale(arr){
         //         return arr.filter(elem=>elem['gender'] !== 'female');
@@ -121,4 +122,34 @@
         //         {name:'anuj', gender:'male'},
         //         {name:'palki', gender:'female'},
         // ]))
+
+// 13. JavaScript function to clone an array
+        // function cloneArray(arr){
+        //         return [...arr] 
+        // }
+        // let newArr = cloneArray([1, 2, 3, 4, 5])
+        // console.log(newArr);
+
+// 14. Function that accept an argument as args and return data type
+        // function typeTeller(input){
+        //         return typeof(input);
+        // }
+        // console.log(typeTeller())
+        // console.log(typeTeller(12))
+        // console.log(typeTeller([]))
+        // console.log(typeTeller(()=>{}))
+
+// 15. Write a javaScript function to get the first element of an array. Passing a parameter n will return the first 'n' elements of an array.
+        // function returnElements(arr, n){
+        //         return arr.splice(0, n)
+        // }
+        // console.log(returnElements([1, 2, 3, 4, 5], 3))
+
+// 15. Write a javaScript function to get the last elements of an array. Passing a parameter n will return the last 'n' elements of an array.
+        // function returnElements(arr, n=1){
+        //         return arr.splice(-n)
+        // }
+        // console.log(returnElements([1, 2, 3, 4, 5], 2))
+
+
 
