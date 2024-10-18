@@ -171,3 +171,40 @@
         //         return [...new Set(arr1.concat(arr2))];
         // }
         // console.log(arrayUnion([1, 2, 3], [2, 3, 4, 5, 6]))
+
+// 18. Move all Zeros to end
+        // function shiftZeros(arr){
+        //         let count = 0;
+        //         let temp = [];
+        //         arr.forEach(e=>{
+        //                 if(e===0) count++;
+        //                 else temp.push(e)
+        //         })
+        //         for(let i=0; i<count; i++){
+        //                 temp.push(0);
+        //         }
+        //         return temp;
+        // }
+        // OR
+        // function shiftZeros(arr){
+        //         let c = 0;
+        //         const n = arr.length;
+        //         for(let i=0; i<n; i++){
+        //                 if(arr[i]!==0){
+        //                         [arr[i], arr[c]] = [arr[c], arr[i]]
+        //                         c++;
+        //                 }
+        //         }
+        //         return arr;
+        // }
+        // console.log(shiftZeros([0, 1, 2, 0, 3 , 0, 5, 0]))
+
+// 19. Check if sum is present in pair in array
+        // function checkPairSum(arr, sum){
+        //         const n = arr.length;
+        //         for(let i=0; i<n-1; i++){
+        //                 if (arr[i] + arr[i+1] === sum) return true;
+        //         }
+        //         return false;
+        // }
+        // console.log(checkPairSum([2, 2, 3, 4, 5], 10))
