@@ -27,6 +27,7 @@
 }
 #user-icon{
     width: 45px;
+    height: 45px;
 }
 #reply{
     margin-left: 10px;
@@ -45,4 +46,11 @@ textarea{
     width: 90%;
     min-height: 60px;
     margin-bottom:10px ;
+}
+button{
+    border: 1px solid black;
+    outline: none;
+    cursor: pointer;
+    padding: 4px 8px;
+    border-radius: 5px;
 }
