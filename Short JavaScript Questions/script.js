@@ -208,3 +208,23 @@
         //         return false;
         // }
         // console.log(checkPairSum([2, 2, 3, 4, 5], 10))
+
+// 20. Write a function that takes an object as argument. In some cases the object contains other objects with some deeply nested       properties. Return the property 'b' of object 'a' inside the original object if it exists. If not, return undefined
+        // function returnNestedObj(obj){
+        //         return obj?.a?.b;
+        // }
+
+        // console.log(returnNestedObj({a:{b:{c:3}}}))
+
+// 21. Write a function that takes an object (a) as argument. Return the sum of all object values.
+        // function returnObjSum(obj){
+        //         return Object.values(obj).reduce((a,b)=>a+b);
+        // }
+        // console.log(returnObjSum({a:1,b:2,c:3}))
+
+// 22. Write a function that takes an object as argument. It should return an object with all original object properties. except for the property with key 'b'
+        function removeObjProperty(obj){
+                delete(obj.b);
+                return obj;
+        }
+        console.log(removeObjProperty({b: 0, a: 7, d: 8 }))
