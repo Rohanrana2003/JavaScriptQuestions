@@ -223,8 +223,52 @@
         // console.log(returnObjSum({a:1,b:2,c:3}))
 
 // 22. Write a function that takes an object as argument. It should return an object with all original object properties. except for the property with key 'b'
-        function removeObjProperty(obj){
-                delete(obj.b);
-                return obj;
-        }
-        console.log(removeObjProperty({b: 0, a: 7, d: 8 }))
+        // function removeObjProperty(obj){
+        //         delete(obj.b);
+        //         return obj;
+        // }
+        // console.log(removeObjProperty({ e: 6, f: 4, b: 5, a: 3 }))
+
+// 23. Write a function that takes two objects as arguments. Unfortunately, the property 'b' in the second object has the wrong key. It should be named 'd' instead. Merge both objects and correct the wrong property name. Return the resulting object. It should have the properties 'a', 'b', 'c', 'd', and 'e'
+        // function changeB(x, y){
+        //         const {b, ...rest} = y;
+        //         return {...x, ...y, d:y.b};
+        // }
+        // console.log(changeB({ a: 1, b: 2 }, { c: 3, b: 4, e: 5 }))
+        // console.log(changeB({ a: 5, b: 4 }, { c: 3, b: 1, e: 2 }))
+
+// 24. Write a function that takes an object (a) and a number (b) as arguments. Multiply all values of 'a' by 'b'. Return the resulting object.
+        // function multiplyValue(x, y){
+        //         Object.keys(x).forEach(k=>{
+        //                 x[k] = x[k] * y;
+        //         })
+        //         return x;
+        // }
+        // console.log(multiplyValue({w:15,x:22,y:13},6))
+
+/*-------------------------[DATES]-------------------------*/
+
+// 25. Write a function that takes two date instances as arguments. It should return true if the dates are equal. It should return false otherwise.
+        // function checkEqualDates(x, y){
+        //         return x.getTime() === y.getTime();
+        // }
+        // console.log(checkEqualDates(new Date('2000/01/01 08:00:00'), new Date('2000/01/01 08:45:00')));
+        // console.log(checkEqualDates(new Date('2000/01/01 08:00:00'), new Date('2000/01/01 08:00:00')));
+
+// 26. Write a function that takes two date instances as argument. It should return the number of days that lies between those dates.
+        // function daysDifference(x, y){
+        //         let timeDiff = Math.abs(x.getTime() - y.getTime());
+        //         let days  = timeDiff/ (1000 * 60 * 60 * 24);
+        //         return days;
+        // }
+        // console.log(daysDifference(new Date('2020-06-11'), new Date('2020-06-01')));
+        // console.log(daysDifference(new Date('2000-01-01'), new Date('2020-06-01')));
+
+// 25. Write a function that takes two date instances as argument. It should return true if they fall on the exact same day. It should return false otherwise.
+        // function checkEqualDay(x, y){
+        //         return x.getDay() === y.getDay();
+        // }
+        // console.log(checkEqualDay(new Date('2000/01/01'), new Date('2000/01/01')))
+        // console.log(checkEqualDay(new Date('2000/01/01'), new Date('2000/01/02')))
+
+        
