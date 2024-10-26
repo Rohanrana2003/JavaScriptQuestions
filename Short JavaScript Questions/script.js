@@ -284,3 +284,9 @@
         // }
         // console.log(checkEarlierDate(new Date('2000/01/01 08:00:00'), new Date('2000/01/01 08:45:00')))
         // console.log(checkEarlierDate(new Date('2000/01/01 08:45:00'), new Date('2000/01/01 08:00:00')))
+
+//28. [Question]
+
+        let arr = [1, 2, 3, 4, 5]
+        let res = Object.assign({}, ...arr.map(value => ({[`age${value}`]:value})))
+        console.log(res)
