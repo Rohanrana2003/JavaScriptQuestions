@@ -1,16 +1,26 @@
 let time = document.getElementById('time');
 let btn = document.getElementById('button');
-
+let timer = null;
 
 function startTimer(){
-    if(timer){
-        clearTimeout(timer);
-    }
-    let timer = setInterval(() => {
-        time.innerText = time.innerText + 1;
-    }, 1000);
+    if(timer) clearInterval(timer);
+
+    timer = setInterval(() => {
+        if(time.innerText < 10)time.innerText = Number(time.innerText) + 1;
+        else clearInterval(timer)
+    }, 500);
+}
+
+function reverseTimer (){
+    if(timer) clearInterval(timer);
+
+    timer = setInterval(() => {
+        if(time.innerText > 0) time.innerText = Number(time.innerText) - 1;
+        else clearInterval(timer)
+    }, 500);
 }
 
 btn.addEventListener('click', ()=>{
-    startTimer();
+    if(time.innerText == 0) startTimer();
+    else if(time.innerText == 10) reverseTimer();
 })
