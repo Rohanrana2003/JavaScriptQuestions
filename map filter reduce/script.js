@@ -7,21 +7,23 @@ let x = [1, 2, 3, 4, 5];
 //Polyfill for map
     // Array.prototype.myMap = function(cb){
     //     let temp = [];
-    //     for(let i = 0; i<this.length; i++){
-    //         temp.push(cb(this[i], i, this));
+    //     for(let i=0; i<this.length; i++){
+    //         temp.push(cb(this[i], i, this))
     //     }
     //     return temp;
     // }
-    // let mapPolyfill = x.myMap((element,i, arr) => element*2);
-    // console.log('mapPolyfill => ' + mapPolyfill);
+
+    let mapPolyfill = x.myMap((element,i, arr) => element*2);
+    console.log('mapPolyfill => ' + mapPolyfill);
 
 
 
 // Filter
     // let filterCopy = x.filter((element, i, arr)=> element > 2);
-    // console.log('filterCopy => ' + filterCopy);
+    // console.log('filterCopy => ' + filterCopy); 
 
-//Polyfill for map
+    
+//Polyfill for filter
     // Array.prototype.myFilter = function(cb){
     //     let temp = [];
     //     for(let i = 0; i<this.length; i++){
@@ -59,8 +61,7 @@ let students = [
     {name:'rohan', rollNumber:1, marks:80},
     {name:'mohan', rollNumber:2, marks:69},
     {name:'sohan', rollNumber:3, marks:35},
-    {name:'lohan', rollNumber:4, marks:55},
-
+    {name:'lohan', rollNumber:4, marks:55}
 ]
 //using map
     // let updatedNames = students.map((student)=>(
@@ -85,4 +86,4 @@ let students = [
         acc + stu.marks
     ), 0)
 
-    console.log(weakStudents);
+    // console.log(weakStudents);

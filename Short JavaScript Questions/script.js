@@ -1,3 +1,4 @@
+
 // 1. Given a String Reverse each word in a sentence
         // let name = 'Rohan bhai kese ho';
         // let arr = name.split([' ']).map(element => {
@@ -271,4 +272,15 @@
         // console.log(checkEqualDay(new Date('2000/01/01'), new Date('2000/01/01')))
         // console.log(checkEqualDay(new Date('2000/01/01'), new Date('2000/01/02')))
 
-        
+// 26. Write a function that takes two date instances as argument. It should return true if the difference between the dates is less than or equal to 1 hour. It should return false otherwise.
+        // function checkTimeDiff(a, b){
+        //         return  Math.abs(a - b) <= 1000 * 60 * 60;
+        // }
+        // console.log(checkTimeDiff(new Date('2000/01/01 08:00:00'), new Date('2000/01/01 08:45:00')));
+
+// 27. Write a function that takes two date instances (a and b) as arguments. It should return true if a is earlier than b. It should return false otherwise.
+        // function checkEarlierDate(a, b){
+        //         return a- b < 0
+        // }
+        // console.log(checkEarlierDate(new Date('2000/01/01 08:00:00'), new Date('2000/01/01 08:45:00')))
+        // console.log(checkEarlierDate(new Date('2000/01/01 08:45:00'), new Date('2000/01/01 08:00:00')))
